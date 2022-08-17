@@ -1,0 +1,10 @@
+.reviews {
+    background: rgb(22,21,21);
+    background: linear-gradient(315deg, rgba(22,21,21,1) 55%, rgba(162,162,162,1) 100%);
+}
+
+    .reviews__container {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    

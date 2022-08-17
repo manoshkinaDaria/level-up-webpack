@@ -1,0 +1,17 @@
+@import "./promo/index.css";
+@import "./container/index.css";
+@import "./product/index.css";
+@import "./button/index.css";
+@import "./body/index.css";
+@import "./ingredients/index.css";
+@import "./components/index.css";
+@import "./reviews-carousel/index.css";
+@import "./reviews/index.css";
+@import "./about-product/index.css";
+@import "./drug/index.css";
+@import "./logo/index.css";
+@import "./connection/index.css";
+@import "./feedback-form/index.css";
+@import "./contacts/index.css";
+@import "./utils/index.css";
+@import "./countdown/index.css";

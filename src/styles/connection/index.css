@@ -1,0 +1,60 @@
+.connection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+.connection__timer {
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+.connection__price-old {
+    grid-row: 4/5;
+    grid-column: 1/2;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: line-through #dddbdb;;
+    margin-left: 3%;
+    color: #dddbdb;
+    letter-spacing: 3px;
+    margin-top: 3%;
+}
+
+.connection__price-new {
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: inline-block;
+    color: white;;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+}
+.connection__price-new:after {
+    background-color: #f9c951;;
+    display: block;
+    content: "";
+    height: 3px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+.connection__price-new:hover:after,
+.connection__price-new:focus:after {
+    width: 100%;
+}
+
+
+.connection__drug_image {
+    width: 200px;
+    height: 300px;
+    align-self: center;
+}
+
+.connection__price {
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}

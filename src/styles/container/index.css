@@ -1,0 +1,11 @@
+.container {
+    width: 100%;
+    max-width: 1004px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+.container__promo {
+    margin-top: 5%;
+}

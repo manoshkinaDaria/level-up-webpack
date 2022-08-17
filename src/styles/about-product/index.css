@@ -1,0 +1,8 @@
+.about-product {
+    background: linear-gradient(45deg, #e6e9f0, #eef1f5);
+}
+
+.about-product__container {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}

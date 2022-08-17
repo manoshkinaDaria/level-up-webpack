@@ -1,0 +1,15 @@
+.logo {
+    font-size: 43px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.logo__connection {
+    grid-column: 1/-1;
+    text-align: center;
+    font-size: 65px;
+
+}

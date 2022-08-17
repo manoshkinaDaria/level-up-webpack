@@ -1,0 +1,53 @@
+.reviews-carousel {
+    width: 564px;
+
+}
+
+.reviews-carousel__slide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+
+}
+
+.reviews-carousel__message {
+    text-align: center;
+    padding-bottom: 6%;
+    padding-top: 3%;
+}
+
+.reviews__container {
+    display: flex;
+    justify-content: center;
+}
+.reviews-carousel__name {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    padding-top: 3%;
+}
+
+.reviews-carousel__message {
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.reviews-carousel__image {
+    width: 200px;
+    height: 170px;
+    border-radius: 50%;
+}
+
+.reviews-carousel__arrow::after {
+    color: white;
+}
+
+.reviews-carousel__swiper-pagination:root {
+    color: white;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #000000;
+}

@@ -1,43 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster+Two|Poppins|Sacramento|Source+Sans+Pro&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <title>LevelUp</title>
+</head>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+<body>
+  <div class="container">
+    <div class=" promo container__promo">
+      <div class="promo__body">
+        <a href="#" class="logo promo__logo">Level<span class="color-decoration">Up</span></a><br>
+        <span class="promo__description">Продукт для повышения <span class="color-decoration">потенции</span></span>
+        <div class="product product__promo">
+          <!-- <div class="product__image"> -->
+          <img src="<%= require('../src/images/prod.png') %>" alt="" class="product__img">
+          <!-- </div> -->
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+          <div class="product__benefits">
+            <h2 class="product__title">О препарате:</h2>
+            <p class="product__text product__text_effect">
+              Lorem ipsum dolor sit amet, <span class="color-decoration">consectetur adipiscing
+                elit</span>, sed do eiusmod tempor incididunt ut
+              labore
+              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi
+              ut
+              aliquip ex ea commodo consequat.
+            </p>
+            <p class="product__text product__text_health">Duis aute irure dolor in reprehenderit in
+              voluptate
+              velit esse cillum
+              dolore
+              eu fugiat nulla pariatur. <span class="color-decoration">Excepteur sint occaecat</span>
+              cupidatat non proident, sunt in culpa qui
+              officia
+              deserunt mollit anim id est laborum.</p>
+            <p class="product__text product__text_price">Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit, sed do eiusmod
+              tempor incididunt <span class="color-decoration">ut labore et dolore magna aliqua.</span> Ut
+              enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <li class="button product__button"><a class="button__link" href="#order">
+                Заказать
+              </a>
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay"></div>
+    <video preload="auto" autoplay muted loop class="overlay__video">
+      <source type="video/mp4" src="<%= require('../src/videos/hourses.mp4') %>">
+    </video>
+  </div>
+
+
+  <div class="components">
+    <div class="container ingredients  ingredients__container">
+      <div class="ingredients__left">
+        <div class="ingredients__item ingredients__item_zinc">
+          <img src="<%= require('../src/images/bank.png') %>" alt="" class="ingredients__image ingredients__image_zinc">
+          <p class="ingredients__description">Sed ut perspiciatis <span class="color-decoration__white">unde
+              omnis</span> iste natus error sit voluptatem.</p>
+        </div>
+        <div class="ingredients__item ingredients__item_cuprum">
+          <img src="<%= require('../src/images/card.png') %>" alt=""
+            class="ingredients__image ingredients__image_cuprum">
+          <p class="ingredients__description">Sed ut perspiciatis unde omnis iste natus <span
+              class="color-decoration__white">error</span> sit voluptatem.</p>
+        </div>
+        <div class="ingredients__item ingredients__item_calcium">
+          <img src="<%= require('../src/images/cash.png') %>" alt=""
+            class="ingredients__image ingredients__image_calcium">
+          <p class="ingredients__description">Sed ut perspiciatis unde omnis <span class="color-decoration__purple">iste
+              natus</span> error sit voluptatem.</p>
+        </div>
+      </div>
+      <div class="ingredients__center">
+        <img src="<%= require('../src/images/prod.png') %>" alt="" class="ingredients__drug">
+      </div>
+      <div class="ingredients__right">
+        <div class="ingredients__item ingredients__item_magnesium">
+          <img src="<%= require('../src/images/ticket.png') %>" alt=""
+            class="ingredients__image ingredients__image_magnesium">
+          <p class="ingredients__description"><span class="color-decoration__white">Sed ut perspiciatis</span>
+            unde omnis iste natus error sit voluptatem.</p>
+        </div>
+        <div class="ingredients__item ingredients__item_ferrum">
+          <img src="<%= require('../src/images/time.png') %>" alt=""
+            class="ingredients__image ingredients__image_ferrum">
+          <p class="ingredients__description"><span class="color-decoration__purple">Sed ut
+              perspiciatis</span> unde omnis iste natus error sit voluptatem.</p>
+        </div>
+        <div class="ingredients__item ingredients__item_cobalt">
+          <img src="<%= require('../src/images/flower.png') %>" alt=""
+            class="ingredients__image ingredients__image_cobalt">
+          <p class="ingredients__description">Sed <span class="color-decoration__purple">ut
+              perspiciatis</span> unde omnis iste natus error sit voluptatem.</p>
+        </div>
+      </div>
+    </div>
+    <li class="button components__button"><a class="button__link" href="#order">
+        Заказать
+      </a>
+    </li>
+  </div>
+  <div class="reviews">
+    <div class="container reviews__container">
+      <div class="reviews-carousel">
+        <div class="swiper reviews-carousel__swiper">
+          <div class="swiper-wrapper reviews-carousel__wrapper">
+            <div class="swiper-slide reviews-carousel__slide">
+              <img class="reviews-carousel__image" src="<%= require('../src/images/amr.png') %>" width="399" />
+              <div class="reviews-carousel__name">Amr</div>
+              <div class="reviews-carousel__message">Ut enim ad minim veniam, quis nostrud
+                exercitation <span class="color-decoration">ullamco laboris nisi ut</span> aliquip ex ea
+                commodo consequat.</div>
+            </div>
+            <div class="swiper-slide reviews-carousel__slide">
+              <img class="reviews-carousel__image" src="<%= require('../src/images/johan.png') %>" width="399" />
+              <div class="reviews-carousel__name">Johan</div>
+              <div class="reviews-carousel__message">Ut enim ad minim veniam, <span class="color-decoration">quis
+                  nostrud</span>
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            </div>
+            <div class="swiper-slide reviews-carousel__slide">
+              <img class="reviews-carousel__image" src="<%= require('../src/images/sarah.png') %>" width="399" />
+              <div class="reviews-carousel__name">Sarah</div>
+              <div class="reviews-carousel__message">Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco <span class="color-decoration">laboris nisi ut aliquip ex ea</span>
+                commodo consequat.</div>
+            </div>
+          </div>
+          <div class="swiper-pagination reviews-carousel__swiper-pagination">
+          </div>
+          <div class="reviews-carousel__arrow swiper-button-prev reviews-carousel__arrow_left">
+          </div>
+          <div class="reviews-carousel__arrow swiper-button-next reviews-carousel__arrow_right">
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="about-product">
+      <div class="container about-product__container">
+        <div class="drug">
+          <div class="drug__photos">
+            <img src="<%= require('../src/images/doc.png') %>" alt="" class="drug__doctor-photo">
+            <!-- <img src="image/prod.png" alt="" class="drug__drug-photo"> -->
+          </div>
+          <div class="drug__specification">
+            <h2 class="drug__title">Sed ut perspiciatis unde omnis</h2>
+            <div class="drug__description">Sed ut perspiciatis unde omnis iste natus error sit
+              voluptatem accusantium <span class="color-decoration">doloremque laudantium, totam rem
+                aperiam,</span> eaque ipsa quae ab illo
+              inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+              <li class="button drug__button"><a class="button__link" href="#order">
+                  Заказать
+                </a>
+              </li>
+            </div>
+          </div>
+          <ul class="drug__list">
+            <li class="drug__item">Voluptatem accusantium doloremque </li>
+            <li class="drug__item">Eaque ipsa quae ab illo <span class="color-decoration">inventore</span>
+              veritatis et</li>
+            <li class="drug__item">Quasi architecto beatae vitae dicta sunt </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="contacts">
+      <div class="container contacts__container">
+        <div class="connection">
+          <h2 class="logo logo__connection">Level<span class="color-decoration">Up</span></h2>
+          <div id="countdown" class="countdown countdown__connection">
+            <div class="countdown-number">
+              <span class="minutes countdown-time"></span>
+            </div>
+            <div class="countdown-number">
+              <span class="seconds countdown-time"></span>
+            </div>
+          </div>
+          <img src="<%= require('../src/images/prod.png') %>" alt="" class="connection__drug_image">
+          <div class="connection__price">
+            <p class="connection__price-new">99$</p>
+            <p class=" connection__price-old">100$</p>
+          </div>
+          <form class="feedback-form feedback-form__connection" id="order">
+            <div class="feedback-form__header">
+              Напиши нам и мы поможем
+            </div>
+            <div class="feedback-form__group">
+              <input name="name" placeholder="Имя" class="feedback-form__input" />
+              <span class="feedback-form__promt">Иван Иванов</span>
+            </div>
+            <div class="feedback-form__group">
+              <input name="phone" placeholder="Телефон" class="feedback-form__input" />
+              <span class="feedback-form__promt">80000000000</span>
+            </div>
+            <button class="button feedback-form__button" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+</body>
+
 </html>
