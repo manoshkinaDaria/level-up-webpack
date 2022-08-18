@@ -12,6 +12,29 @@
     border: none;
 }
 
+@media (max-width: 768px) {
+    .button {
+        width: 170px;
+        height: 52px;
+    }
+}
+
+@media (max-width: 550px) {
+    .button {
+        width: 160px;
+        height: 42px;
+    }
+}
+
+@media (max-width: 440px) {
+    .button {
+        width: 140px;
+        height: 42px;
+        font-size: 14px;
+    }
+}
+
+
 .button__link {
     display: flex;
     text-decoration: none;

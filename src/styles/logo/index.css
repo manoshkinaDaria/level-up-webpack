@@ -5,11 +5,56 @@
     color: white;
 }
 
+@media (max-width: 1103px) {
+    .logo__promo {
+        font-size: 38px;
+    }
+}
 
+@media (max-width: 651px) {
+    .logo__promo {
+        font-size: 34px;
+    }
+}
 
+@media (max-width: 440px) {
+    .logo__promo {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 1103px) {
+    .logo-group  {
+        margin-top: 3%;
+    }
+}
 .logo__connection {
     grid-column: 1/-1;
     text-align: center;
     font-size: 65px;
 
+}
+
+@media (max-width: 1103px) {
+    .logo__connection {
+        font-size: 55px;
+    }
+}
+
+@media (max-width: 1065px) {
+    .logo__connection {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo__connection {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 440px) {
+    .logo__connection {
+        font-size: 30px;
+    }
 }

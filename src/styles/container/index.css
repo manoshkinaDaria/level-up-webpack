@@ -6,6 +6,56 @@
     padding: 0;
 }
 
+@media (max-width: 1103px) {
+    .container {
+        width: 900px
+    }
+}
+
+@media (max-width: 1065px) {
+    .container {
+        width: 800px
+    }
+}
+
+@media (max-width: 851px) {
+    .container {
+        width: 700px
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 600px
+    }
+}
+
+@media (max-width: 651px) {
+    .container {
+        width: 500px
+    }
+}
+
+@media (max-width: 550px) {
+    .container {
+        width: 400px
+    }
+}
+
+@media (max-width: 440px) {
+    .container {
+        width: 300px
+    }
+}
+
+@media (max-width: 360px) {
+    .container {
+        width: 290px
+    }
+}
+
+
 .container__promo {
-    margin-top: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }

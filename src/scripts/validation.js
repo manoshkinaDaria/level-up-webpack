@@ -1,10 +1,8 @@
-import $ from 'jquery';
 import JustValidate from 'just-validate';
 
-const isNumber = (number) => {
-  const regex = /^\d+$/;
-  return regex.test(number);
-};
+document.querySelector('.feedback-form__input[name="phone"]').addEventListener("keyup", function(){
+  this.value = this.value.replace(/[^\d]/g, "");
+});
 
 const validateForm = (selector) => new JustValidate(selector, {
   focusInvalidField: true,
@@ -20,19 +18,12 @@ const validateForm = (selector) => new JustValidate(selector, {
     rule: 'required',
     errorMessage: 'Данное поле обязательно для заполнения',
   },
-  {
-    errorMessage: 'Только цифры',
-    validator: (value) => {
-      if (value) {
-        return isNumber($.trim(value));
-      }
-      return true;
-    },
-  }
+  
   ])
   .onSuccess((event) => {
     event.preventDefault();
     console.log('done');
   });
+  
 validateForm('.feedback-form')
 

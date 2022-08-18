@@ -13,54 +13,56 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class=" promo container__promo">
-      <div class="promo__body">
-        <a href="#" class="logo promo__logo">Level<span class="color-decoration">Up</span></a><br>
-        <span class="promo__description">Продукт для повышения <span class="color-decoration">потенции</span></span>
-        <div class="product product__promo">
-          <!-- <div class="product__image"> -->
-          <img src="<%= require('../src/images/prod.png') %>" alt="" class="product__img">
-          <!-- </div> -->
-
-          <div class="product__benefits">
-            <h2 class="product__title">О препарате:</h2>
-            <p class="product__text product__text_effect">
-              Lorem ipsum dolor sit amet, <span class="color-decoration">consectetur adipiscing
-                elit</span>, sed do eiusmod tempor incididunt ut
-              labore
-              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi
-              ut
-              aliquip ex ea commodo consequat.
-            </p>
-            <p class="product__text product__text_health">Duis aute irure dolor in reprehenderit in
-              voluptate
-              velit esse cillum
-              dolore
-              eu fugiat nulla pariatur. <span class="color-decoration">Excepteur sint occaecat</span>
-              cupidatat non proident, sunt in culpa qui
-              officia
-              deserunt mollit anim id est laborum.</p>
-            <p class="product__text product__text_price">Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit, sed do eiusmod
-              tempor incididunt <span class="color-decoration">ut labore et dolore magna aliqua.</span> Ut
-              enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <li class="button product__button"><a class="button__link" href="#order">
-                Заказать
-              </a>
-            </li>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="overlay"></div>
+  <div class="page-promo">
     <video preload="auto" autoplay muted loop class="overlay__video">
       <source type="video/mp4" src="<%= require('../src/videos/hourses.mp4') %>">
     </video>
+    <div class="container">
+      <div class=" promo container__promo">
+        <div class="promo__body">
+          <div class="logo-group">
+            <a href="#" class="logo logo__promo">Level<span class="color-decoration">Up</span></a><br>
+            <span class="promo__description">Продукт для повышения <span class="color-decoration">потенции</span></span>
+          </div>
+          <div class="product product__promo">
+            <div class="product__image">
+            <img src="<%= require('../src/images/prod.png') %>" alt="" class="product__img">
+            </div>
+            <div class="product__benefits">
+              <h2 class="product__title">О препарате:</h2>
+              <p class="product__text product__text_effect">
+                Lorem ipsum dolor sit amet, <span class="color-decoration">consectetur adipiscing
+                  elit</span>, sed do eiusmod tempor incididunt ut
+                labore
+                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi
+                ut
+                aliquip ex ea commodo consequat.
+              </p>
+              <p class="product__text product__text_health">Duis aute irure dolor in reprehenderit in
+                voluptate
+                velit esse cillum
+                dolore
+                eu fugiat nulla pariatur. <span class="color-decoration">Excepteur sint occaecat</span>
+                cupidatat non proident, sunt in culpa qui
+                officia
+                deserunt mollit anim id est laborum.</p>
+              <p class="product__text product__text_price">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod
+                tempor incididunt <span class="color-decoration">ut labore et dolore magna aliqua.</span> Ut
+                enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <li class="button product__button"><a class="button__link" href="#order">
+                  Заказать
+                </a>
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </div>
   </div>
-
 
   <div class="components">
     <div class="container ingredients  ingredients__container">
@@ -189,7 +191,9 @@
               <span class="seconds countdown-time"></span>
             </div>
           </div>
+          <div class="connection__photo">
           <img src="<%= require('../src/images/prod.png') %>" alt="" class="connection__drug_image">
+        </div>
           <div class="connection__price">
             <p class="connection__price-new">99$</p>
             <p class=" connection__price-old">100$</p>

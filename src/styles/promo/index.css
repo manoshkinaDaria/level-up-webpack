@@ -1,12 +1,19 @@
-.promo {
-    position: relative;
-}
-
-
 .promo__description {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
     letter-spacing: 2px
+}
+
+@media (max-width: 651px) {
+    .promo__description {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 440px) {
+    .promo__description {
+        font-size: 12px;
+    }
 }
 
 .promo__product {

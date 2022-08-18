@@ -1,37 +1,105 @@
 .connection {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    
 }
+
+@media (max-width: 651px) {
+    .connection__photo {
+        display: flex;
+        grid-row: 3/4;
+        justify-content: center;
+        margin-top: 10%;
+        margin-bottom: 10%;
+
+    }
+}
+
 
 .connection__timer {
     grid-column: 1/-1;
     text-align: center;
 }
 
+@media (max-width: 651px) {
+    .connection__price {
+        grid-row: 3/4;
+        grid-column: 2/3;
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+
 .connection__price-old {
     grid-row: 4/5;
     grid-column: 1/2;
     font-size: 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-decoration: line-through #dddbdb;;
+    text-decoration: line-through #dddbdb;
+    ;
     margin-left: 3%;
     color: #dddbdb;
     letter-spacing: 3px;
     margin-top: 3%;
 }
 
+@media (max-width: 1103px) {
+    .connection__price-old {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1065px) {
+    .connection__price-old {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .connection__price-old {
+        font-size: 13px;
+    }
+}
+
 .connection__price-new {
     font-size: 50px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: inline-block;
-    color: white;;
+    color: white;
+    ;
     line-height: 1;
     text-decoration: none;
     cursor: pointer;
 }
+
+@media (max-width: 1103px) {
+    .connection__price-new {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1065px) {
+    .connection__price-new {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .connection__price-new {
+        font-size: 33px;
+    }
+}
+
+@media (max-width: 360px) {
+    .connection__price-new {
+        font-size: 29px;
+    }
+}
+
 .connection__price-new:after {
-    background-color: #f9c951;;
+    background-color: #f9c951;
+    ;
     display: block;
     content: "";
     height: 3px;
@@ -40,6 +108,7 @@
     -moz--transition: width .3s ease-in-out;
     transition: width .3s ease-in-out;
 }
+
 .connection__price-new:hover:after,
 .connection__price-new:focus:after {
     width: 100%;
@@ -50,6 +119,34 @@
     width: 200px;
     height: 300px;
     align-self: center;
+}
+
+@media (max-width: 1065px) {
+    .connection__drug_image {
+        width: 160px;
+        height: 260px;
+    }
+}
+
+@media (max-width: 768px) {
+    .connection__drug_image {
+        width: 140px;
+        height: 240px;
+    }
+}
+
+@media (max-width: 651px) {
+    .connection__drug_image {
+        width: 130px;
+        height: 220px;
+    }
+}
+
+@media (max-width: 440px) {
+    .connection__drug_image {
+        width: 105px;
+        height: 173px;
+    }
 }
 
 .connection__price {
