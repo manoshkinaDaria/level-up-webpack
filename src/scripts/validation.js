@@ -1,9 +1,4 @@
 import JustValidate from 'just-validate';
-
-document.querySelector('.feedback-form__input[name="phone"]').addEventListener("keyup", function(){
-  this.value = this.value.replace(/[^\d]/g, "");
-});
-
 const validateForm = (selector) => new JustValidate(selector, {
   focusInvalidField: true,
   errorLabelStyle: {

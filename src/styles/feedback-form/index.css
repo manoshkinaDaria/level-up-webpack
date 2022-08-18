@@ -23,6 +23,7 @@
         font-size: 25px;
     }
 }
+
 @media (max-width: 851px) {
     .feedback-form__header {
         font-size: 23px;
@@ -43,12 +44,14 @@
 
 .feedback-form__group {
     margin-bottom: 3%;
+    display: flex;
+    flex-direction: column;
 }
 
 @media(max-width: 651px) {
     .feedback-form__group {
-       display: flex;
-       justify-content: center;
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -63,6 +66,12 @@
     width: 80%;
 }
 
+@media(max-width: 1780px) {
+    .feedback-form__input {
+        width: 100%;
+    }
+}
+
 @media(max-width: 1103px) {
     .feedback-form__input {
         width: 100%;
@@ -72,6 +81,14 @@
 @media(max-width: 651px) {
     .feedback-form__input {
         width: 80%;
+        margin-left: 10%;
+    }
+}
+
+@media(max-width: 550px) {
+    .feedback-form__input {
+        width: 100%;
+        margin-left: 0;
     }
 }
 
@@ -101,15 +118,21 @@
     display: none;
     position: absolute;
     bottom: 50%;
-    right: 50px;
+    right: 2%;
     border-radius: 10%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #8d8d8d;
-    ;
     padding: 5px;
     text-align: center;
     font-size: 12px;
 }
+
+@media(max-width: 651px) {
+    .feedback-form__input:focus+.feedback-form__promt {
+        right: 22%;
+    }
+}
+
 
 /* Появление скрытого элемента при клике */
 .feedback-form__input:focus+.feedback-form__promt {

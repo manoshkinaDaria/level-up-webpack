@@ -14,12 +14,12 @@ document.addEventListener('DOMContentLoaded', () => {
       const clock = document.getElementById(id);
       const minutesSpan = clock.querySelector('.minutes');
       const secondsSpan = clock.querySelector('.seconds');
-  
+      const timeinterval = setInterval(updateClock, 1000);
       function updateClock() {
         const t = getTimeRemaining(endtime);
         minutesSpan.innerHTML = (`0${t.minutes}`).slice(-2);
         secondsSpan.innerHTML = (`0${t.seconds}`).slice(-2);
-        const timeinterval = setInterval(updateClock, 1000);
+
         if (t.total <= 0) {
           clearInterval(timeinterval);
         }
